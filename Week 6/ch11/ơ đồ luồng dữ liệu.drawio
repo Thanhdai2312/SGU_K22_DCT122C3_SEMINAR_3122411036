@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.3">
+  <diagram name="Page-1" id="7_kCZ3vlhEt442hTLqiy">
+    <mxGraphModel dx="2054" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-6" edge="1" parent="1" source="AZiXnuEwB3ILBKHBgDAR-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="AZiXnuEwB3ILBKHBgDAR-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-7" connectable="0" parent="AZiXnuEwB3ILBKHBgDAR-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Upload via API" vertex="1">
+          <mxGeometry relative="1" x="0.0324" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-1" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Training Data&lt;br/&gt;(fine_tuning.jsonl)&lt;br/&gt;• 15 high-quality examples" vertex="1">
+          <mxGeometry height="100" width="190" x="-30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-8" edge="1" parent="1" source="AZiXnuEwB3ILBKHBgDAR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=180;exitDy=50;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="AZiXnuEwB3ILBKHBgDAR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-9" connectable="0" parent="AZiXnuEwB3ILBKHBgDAR-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Initialize" vertex="1">
+          <mxGeometry relative="1" x="0.073" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-2" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="&lt;code data-path-to-node=&quot;8,2,0&quot; data-index-in-node=&quot;15&quot;&gt;Base Model&lt;/code&gt;&lt;br/&gt;&lt;code data-path-to-node=&quot;8,2,0&quot; data-index-in-node=&quot;26&quot;&gt;(gpt-4o-mini)&lt;/code&gt;&lt;br/&gt;&lt;code data-path-to-node=&quot;8,2,0&quot; data-index-in-node=&quot;40&quot;&gt;• Pre-trained generalized LLM&lt;/code&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="320" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;code data-path-to-node=&quot;10,2,0&quot; data-index-in-node=&quot;15&quot;&gt;OpenAI Fine-Tuning Engine&lt;/code&gt;&lt;br/&gt;&lt;code data-path-to-node=&quot;10,2,0&quot; data-index-in-node=&quot;41&quot;&gt;[ Adjusting Weights &amp;amp; Parameters ]&lt;/code&gt;" vertex="1">
+          <mxGeometry height="110" width="190" x="670" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-5" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;code data-path-to-node=&quot;12,2,0&quot; data-index-in-node=&quot;15&quot;&gt;Specialized Model&lt;/code&gt;&lt;br/&gt;&lt;code data-path-to-node=&quot;12,2,0&quot; data-index-in-node=&quot;33&quot;&gt;(ft:gpt-4o-mini-...)&lt;/code&gt;&lt;br/&gt;&lt;code data-path-to-node=&quot;12,2,0&quot; data-index-in-node=&quot;54&quot;&gt;• Clean Python Code Only&lt;/code&gt;&lt;br/&gt;&lt;code data-path-to-node=&quot;12,2,0&quot; data-index-in-node=&quot;79&quot;&gt;• No redundant comments&lt;/code&gt;" vertex="1">
+          <mxGeometry height="110" width="190" x="1050" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-10" edge="1" parent="1" source="AZiXnuEwB3ILBKHBgDAR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=45;entryPerimeter=0;" target="AZiXnuEwB3ILBKHBgDAR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZiXnuEwB3ILBKHBgDAR-11" connectable="0" parent="AZiXnuEwB3ILBKHBgDAR-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Generate New ID" vertex="1">
+          <mxGeometry relative="1" x="0.0351" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
