@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.3">
+  <diagram name="Page-1" id="BUmtaYB_z2xX1Yxo9NC0">
+    <mxGraphModel dx="1204" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f9f9f9;strokeColor=#cccccc;fontColor=light-dark(#333333,#cccccc);dashed=1;dashPattern=5 5;" value="Vòng lặp TDD tích hợp AI" vertex="1">
+          <mxGeometry height="432" width="594" x="20" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff0b3;strokeColor=#ffcc00;fontColor=light-dark(#333333,#cccccc);dashed=1;dashPattern=5 5;" value="🤖 GenAI (ChatGPT / Copilot)" vertex="1">
+          <mxGeometry height="78" width="260" x="81" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f2e6ff;strokeColor=#9933ff;fontColor=light-dark(#333333,#cccccc);" value="👤 Kỹ sư phần mềm (Human Review)" vertex="1">
+          <mxGeometry height="78" width="260" x="649" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#ffe6e6;strokeColor=#ff3333;fontColor=#990000;" value="🔴 RED&#xa;(Viết Test báo lỗi)" vertex="1">
+          <mxGeometry height="78" width="165" x="188" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#e6ffe6;strokeColor=#33cc33;fontColor=#006600;" value="🟢 GREEN&#xa;(Viết Code để Pass)" vertex="1">
+          <mxGeometry height="78" width="176" x="338" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#e6f0ff;strokeColor=#3385ff;fontColor=#003399;" value="🔵 REFACTOR&#xa;(Tối ưu hóa Code)" vertex="1">
+          <mxGeometry height="78" width="167" x="168" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-7" edge="1" parent="1" source="sR3WPoRsU1qjb2QLgAwa-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.73;exitY=1;entryX=0.32;entryY=0;rounded=0;" target="sR3WPoRsU1qjb2QLgAwa-5" value="Pass">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="356" y="348" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-8" edge="1" parent="1" source="sR3WPoRsU1qjb2QLgAwa-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.11;rounded=0;" target="sR3WPoRsU1qjb2QLgAwa-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="426" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-9" edge="1" parent="1" source="sR3WPoRsU1qjb2QLgAwa-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0;entryX=0.45;entryY=1;rounded=0;" target="sR3WPoRsU1qjb2QLgAwa-4" value="Tính năng mới">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="251" y="348" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-10" edge="1" parent="1" source="sR3WPoRsU1qjb2QLgAwa-2" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=0.6;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="sR3WPoRsU1qjb2QLgAwa-4" value="Tự động phân tích &amp; Sinh Test Cases">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="271" y="147" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-11" edge="1" parent="1" source="sR3WPoRsU1qjb2QLgAwa-3" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=0.01;exitY=1;entryX=0.67;entryY=0;rounded=0;" target="sR3WPoRsU1qjb2QLgAwa-5" value="Kiểm chứng logic &amp; Đối chiếu Requirements">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="493" y="348" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sR3WPoRsU1qjb2QLgAwa-12" edge="1" parent="1" source="sR3WPoRsU1qjb2QLgAwa-2" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.37;exitY=1;entryX=0.07;entryY=0;rounded=0;" target="sR3WPoRsU1qjb2QLgAwa-6" value="Gợi ý cấu trúc Clean Code">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="134" y="147" />
+              <mxPoint x="134" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
